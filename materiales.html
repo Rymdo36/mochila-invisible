@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#7043a3"><title>Mochila Invisible · QR en televisión</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="materiales.css">
+  <script src="config.js" defer></script><script src="vendor/qrcode.min.js" defer></script><script src="assets/noticiero-data.js" defer></script><script src="materiales.js" defer></script>
+</head>
+<body class="materials-body">
+  <header class="header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-art" role="img" aria-label="Mochila Invisible"></span></a><a class="button secondary" href="index.html">Volver a la web</a></div></header>
+  <main class="page materials-page"><div class="page-intro"><div class="eyebrow">La revelación en vivo</div><h1>De la pantalla<br>a un relevo.</h1><p>Vista de cómo se integraría el QR en la transmisión de TC y en la pieza impresa para la sustentación.</p></div>
+    <section class="panel qr-controls"><form id="qr-form"><div class="field"><label for="public-url">Dirección de la web publicada</label><input type="url" id="public-url" name="public-url" placeholder="https://tu-usuario.github.io/mochila-invisible/" required autocomplete="url"><small>Cuando publiquemos en GitHub, esta será la dirección a la que llevará el QR.</small></div><button class="button" type="submit">Actualizar el QR</button></form><p class="validation" id="qr-error" role="alert" hidden></p><div class="button-row"><button id="download-qr" class="button secondary" disabled>Descargar QR</button><button id="download-tv" class="button secondary" disabled>Descargar pieza de TV</button><button id="print-sheet" class="button secondary">Imprimir lámina</button></div><p class="input-hint" id="qr-status" role="status">El QR definitivo estará disponible al configurar la dirección publicada.</p></section>
+    <section class="television-preview"><h2>Así aparecería en la televisión.</h2><div class="tv-wrapper"><canvas id="tv-preview" width="1920" height="1080" aria-label="Muestra de la cobertura de TC con un recuadro para escanear el QR"></canvas></div><p class="input-hint">La composición conserva a los camarógrafos, la mochila y la franja del noticiero.</p></section>
+    <section class="print-sheet" id="print-sheet-content"><div class="sheet-brand"><span class="brand-art" role="img" aria-label="Mochila Invisible"></span><span>Propuesta de campaña · Cóndor Estudiantil 2026</span></div><h2>¿Quién cuida<br>a quien cuida?</h2><p class="sheet-lead">Escanea. Comparte el cuidado.<br>Dale un respiro a alguien más.</p><img id="tv-print" alt="Aplicación del QR en la cobertura propuesta de TC Televisión"><div class="sheet-bottom"><div><h3>Solicita un relevo.</h3><p>Comparte tus necesidades y tu disponibilidad.<br>El equipo evalúa y coordina contigo.</p><h3 style="margin-top:24px">Ofrece tu tiempo.</h3><p>Postúlate al voluntariado y conoce el proceso<br>de evaluación y capacitación.</p></div><div class="print-qr"><div id="qr-print"></div><p id="qr-url">QR pendiente de publicación</p></div></div><p class="sheet-foot">Recarga a quien carga. · Turnos propuestos de 4 horas, previa evaluación y consentimiento.</p></section>
+  </main>
+</body>
+</html>

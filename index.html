@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6b3f9e">
+  <meta name="description" content="Mochila Invisible. Un espacio para pedir un relevo, compartir el cuidado y recuperar tiempo para ti.">
+  <title>Mochila Invisible · Un respiro para quienes cuidan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <header class="header">
+    <div class="header-inner">
+      <button class="icon-button menu-button" id="menu-button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-menu" data-action="menu"></button>
+      <a class="brand" href="#inicio" aria-label="Mochila Invisible, inicio"><span class="brand-art" role="img" aria-label="Mochila Invisible"></span></a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#inicio" data-route="inicio">Inicio</a>
+        <a href="#como-funciona" data-route="como-funciona">Cómo funciona</a>
+        <a href="#mis-relevos" data-route="mis-relevos">Mis relevos</a>
+        <a href="#voluntariado" data-route="voluntariado">Ser voluntario</a>
+      </nav>
+      <a class="profile-button" href="#perfil" aria-label="Mi perfil"><span data-icon="user"></span><span class="profile-label">Mi perfil</span></a>
+    </div>
+    <nav id="site-menu" class="site-menu" aria-label="Menú" hidden>
+      <a href="#como-funciona">Cómo funciona</a><a href="#solicitar">Solicitar un relevo</a>
+      <a href="#voluntariado">Ser voluntario</a><a href="#mis-relevos">Mis relevos</a>
+      <a href="#perfil">Mi perfil y preferencias</a><a href="#sobre-el-piloto">Sobre el piloto</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer">
+    <p><strong>Mochila Invisible</strong> · Recarga a quien carga.</p>
+    <div><a href="#sobre-el-piloto">Prototipo del piloto</a><span>·</span><a href="#privacidad">Tus datos</a><span>·</span><a href="materiales.html">Vista para presentación</a></div>
+  </footer>
+  <nav class="bottom-nav" aria-label="Navegación móvil">
+    <a href="#inicio" data-route="inicio"><span data-icon="home"></span><span>Inicio</span></a>
+    <a href="#mis-relevos" data-route="mis-relevos"><span data-icon="exchange"></span><span>Mis relevos</span></a>
+    <a href="#perfil" data-route="perfil"><span data-icon="user"></span><span>Mi perfil</span></a>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="confirmation" class="dialog">
+    <h2 id="confirmation-title">¿Continuar?</h2><p id="confirmation-copy"></p>
+    <div class="button-row"><button class="button secondary" id="confirmation-cancel">Volver</button><button class="button" id="confirmation-accept">Confirmar</button></div>
+  </dialog>
+  <noscript><p class="noscript">Activa JavaScript para probar los formularios y el seguimiento de solicitudes.</p></noscript>
+</body>
+</html>
